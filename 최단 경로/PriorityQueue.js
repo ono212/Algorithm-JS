@@ -15,6 +15,10 @@ class Heap {
 
   peek = () => this.heap[0]; // 항상 최상위 노드가 peek 가 된다.
 
+  /*
+    아래➡위로 재정렬
+    insert시 제일 끝(마지막 인덱스)에 삽입하기 때문에 아래에서 위로 올라가며 재정렬이 필요하다.
+  */
   heapifyUp = () => {
     let index = this.heap.length - 1; // 계속해서 변하는 index 값
     const lastInsertedNode = this.heap[index];
@@ -36,7 +40,12 @@ class Heap {
     this.heap[index] = lastInsertedNode;
   };
 
-  // 변경된 루트노드가 제 자리를 찾아가도록 하는 메소드
+  /*
+    변경된 루트노드가 제 자리를 찾아가도록 하는 메소드
+    위➡아래로 재정렬
+    remove시 제일 끝(마지막 인덱스)에 있던 노드를 루트노드에 위치시키기 때문에 위에서 아래로 내려가며 재정렬이 필요하다.
+  */
+
   heapifyDown = () => {
     let index = 0;
     const count = this.heap.length;
@@ -73,6 +82,7 @@ class Heap {
     this.heapifyUp(); // 배열에 가장 끝에 넣고, 다시 min heap 의 형태를 갖추도록 한다.
   };
 
+  // 최소값(루트 노드) 삭제
   remove = () => {
     const count = this.heap.length;
     const rootNode = this.heap[0];
