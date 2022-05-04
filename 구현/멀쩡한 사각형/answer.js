@@ -1,6 +1,6 @@
 /*
 2022-05-05
-백준 : https://programmers.co.kr/learn/courses/30/lessons/62048
+프로그래머스 : https://programmers.co.kr/learn/courses/30/lessons/62048
 해결 ⭕
 
 처음에는 DFS로 풀어야하나 어렵게 생각이 됐는데 좌표로 생각해서 기울기 개념을 떠올리니 쉽게 풀렸다.
