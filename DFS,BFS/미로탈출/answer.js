@@ -1,5 +1,11 @@
 /*
+2022-04-05
 이코테, 백준 : https://www.acmicpc.net/problem/2178
+
+게임 맵 최단거리와 비슷한 문제!
+예전에 풀고 안올렸다,,
+bfs는 최단거리를 보장한다,,!!!!!!
+
 참조 : https://nyang-in.tistory.com/235
 */
 
