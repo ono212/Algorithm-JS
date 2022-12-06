@@ -36,6 +36,7 @@ for (let i = 0; i < N; i++) {
     dp[i + time] = Math.max(dp[i + time], maximumProfit + pay);
     // Math.max(오늘 시작하는 상담이 끝난 날의 수익, 현재까지의 최대 수익에 이번 상담의 수익을 더한 값)
     // dp[i + time]은 i일 때 상담을 시작하면 상담이 끝나는 날이다. 즉, 상담이 끝나는 날의 값을 갱신해주고 있다.
+    // 결국 N날까지의 최대 이익을 계산하는 것이기 때문에 1일부터 시작해서 순차적으로 확인해도 문제가 되지 않는다.
   }
 }
 console.log(Math.max(...dp));
