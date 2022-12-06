@@ -6,6 +6,8 @@
 압축했을 때 가장 짧은 길이
 
 압축하지 않거나, 1개 단위, 2개 단위, ...
+
+⭐가장 큰 단위는 문자열 길이의 절반이다! (s.length / 2)
 */
 function solution(s) {
   var answer = s.length;
